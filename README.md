@@ -39,4 +39,24 @@ Open Playwright test runner UI:
 npx playwright test --ui
 ```
 
-4. To run in headed mode or debug existing tests, use the Playwright UI. It provides test playback and browser controls.
+### Generate tests with Playwright CodeGen
+
+Playwright CodeGen helps record browser actions and generate test code automatically.
+
+```bash
+npx playwright codegen https://example.com
+```
+
+- Replace `https://example.com` with the target URL.
+- Actions in the browser are recorded and displayed in the CodeGen UI.
+- Choose the language and save the generated script to a file.
+
+Then run the generated test with:
+
+```bash
+npx playwright test path/to/generated.spec.ts
+```
+
+### Debugging and headed mode
+
+To run in headed mode or debug existing tests, use the Playwright UI. It provides test playback and browser controls.
